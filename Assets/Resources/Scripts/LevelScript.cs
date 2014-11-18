@@ -7,11 +7,11 @@ public class LevelScript : MonoBehaviour {
     public int startPositionX = -96;
     public int startPositionY = 58;
 
-    private string[] prefabNames = { "Prefabs/block_blue",
-                                     "Prefabs/block_green",
+    private string[] prefabNames = { "Prefabs/block_green",
+                                     "Prefabs/block_pink",
+                                     "Prefabs/block_blue",
                                      "Prefabs/block_yellow",
                                      "Prefabs/block_red",
-                                     "Prefabs/block_pink",
                                      "Prefabs/block_gray" };
 
 	// Use this for initialization

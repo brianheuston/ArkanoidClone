@@ -220,6 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f583f246600c44da291537e24484f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockWidth: 16
+  blockHeight: 8
+  startPositionX: -96
+  startPositionY: 50
 --- !u!1 &921569055
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class BlockScript : MonoBehaviour {
+    public bool IsDestructible = true;
+    public int NumberOfHitsToDestroy = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,7 @@ public class BlockScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.name == "ball")
+        if (IsDestructible && col.gameObject.name == "ball" && --NumberOfHitsToDestroy == 0)
         {
             Destroy(gameObject);
         }

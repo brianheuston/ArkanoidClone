@@ -5,17 +5,18 @@ public class LevelScript : MonoBehaviour {
     public int blockWidth = 16;
     public int blockHeight = 8;
     public int startPositionX = -96;
-    public int startPositionY = 50;
+    public int startPositionY = 58;
 
     private string[] prefabNames = { "Prefabs/block_blue",
                                      "Prefabs/block_green",
                                      "Prefabs/block_yellow",
                                      "Prefabs/block_red",
-                                     "Prefabs/block_pink" };
+                                     "Prefabs/block_pink",
+                                     "Prefabs/block_gray" };
 
 	// Use this for initialization
 	void Start () {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < prefabNames.Length; i++)
         {
             for (int j = 0; j < 13; j++)
             {

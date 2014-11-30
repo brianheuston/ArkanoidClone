@@ -84,7 +84,6 @@ public class MoveScript : MonoBehaviour {
 
             if (obj.transform.position.x - transform.position.x != ((BallScript)obj.GetComponent<BallScript>()).GetOffsetPosition())
             {
-                float t = ((BallScript)obj.GetComponent<BallScript>()).GetOffsetPosition();
                 obj.transform.position = new Vector2(transform.position.x + ((BallScript)obj.GetComponent<BallScript>()).GetOffsetPosition(), obj.transform.position.y);
             }
         }
